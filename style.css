@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #282436;
+    background: linear-gradient(120deg, blue, #050f44, #131461) ;
     
 }
 .container {
@@ -28,7 +28,7 @@ body {
     margin: 25px;
     border-radius: 10px;
 }
-.visor {
+#visor {
     width: 100%;
     max-width: 500px;
     height: 80px;
@@ -52,12 +52,18 @@ body {
     width: 100%;
     height: 70px;
     line-height: 70px;
-    background-color: blue;
+    background-color: #0000ff;
     text-align: center;
     align-items: center;
     font-size: 40px;
     border-radius: 5px;
     cursor: pointer;
+}
+.int-btn:hover {
+    background-color: #0000ff50;
+    font-size: 45px;
+    color: #7ed808;
+    border-radius: 25%;
 }
 .int-btn.es {
     background-color: #a55409;

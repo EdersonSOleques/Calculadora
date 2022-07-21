@@ -1,17 +1,22 @@
 function clicou(numer) {
-    var numero = document.getElementById('resultado').innerHTML
-    document.getElementById('resultado').innerHTML = numero + numer
+    document.querySelector("[name='resultado']").value += numer
 }
 function limpar() {
-  document.getElementById('resultado').innerHTML = ""  
+    document.querySelector("[name='resultado']").value = ""  
 }
 function tirar() {
-   var tiraUm = document.getElementById('resultado').innerHTML
-   document.getElementById('resultado').innerHTML = tiraUm.substring(0, tiraUm.length -1 )
+   var tiraUm = document.querySelector("[name='resultado']").value
+   document.querySelector("[name='resultado']").value = tiraUm.substring(0, tiraUm.length -1 )
 }
 function calcular() {
-    var resultado = document.getElementById('resultado').innerHTML
+    var resultado = document.querySelector("[name='resultado']").value
     if(resultado) {
-        document.getElementById('resultado').innerHTML = eval(resultado)
+        document.querySelector("[name='resultado']").value = eval(resultado)
+    }
+}
+function percent() {
+    var resultado = document.querySelector("[name='resultado']").value += '/ 100'
+    if(resultado) {
+        document.querySelector("[name='resultado']").value = eval(resultado)
     }
 }
